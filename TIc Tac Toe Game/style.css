@@ -1,0 +1,124 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+h1 {
+  margin: 0;
+}
+
+@font-palette-values --Grays {
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+.mint {
+  font-palette: --Mint;
+}
+
+
+/*  */
+body{
+  background-color: #1b3641;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: #B8DBD9;
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 50px;
+}
+.header{
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game{
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+.gamebuttons{
+  height: 19vmin;
+  width: 19vmin;
+  border-radius: 10px;
+  border: none;
+  font-size: 9vmin;
+  color: #ED1C24;
+  box-shadow: 3px 3px 5px rgb(107, 103, 103);
+  background-color: #FDE74C;
+}
+.player{
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px 15px 0px;
+  color: #0a487b;
+  font-size: 20px;
+  align-items: center;
+}
+
+.buttonsection{
+  width: 40vmin;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 20px 0px;
+}
+.button{
+  background-color: #ED1C24;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 5px #17BEBB;
+}
+
+/* Text Formatting */
+#gametitle{
+  font-size: 40PX;
+  color: #bc380f;
+}
+
+.hide
+{
+  display: none;
+ 
+}
+#wintext{
+  color: #0a487b;
+  font-size: 8vmin;
+}
+.yourchance{
+  background-color: #42da24;
+  padding: 9px;
+  border-radius: 15px;
+}
