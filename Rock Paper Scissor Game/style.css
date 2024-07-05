@@ -1,0 +1,120 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: myfont;
+  src: url(GAMERIA.ttf);
+}
+body {
+  position: relative;
+  text-align: center;
+  background-image: url(Images/wallpaper.jpg);
+  font-family: myfont;
+  object-fit: cover;
+  overflow: hidden; /* Ensure the pseudo-element covers the entire body */
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 11, 117, 0.1); /* Cyan color with 30% opacity */
+  z-index: -1; /* Ensure the overlay is behind the content */
+}
+main{
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #14213D;
+  box-shadow: 4px 4px 4px white;
+}
+.title{
+  font-size: 4rem;
+  color: #F77F00;
+  margin-left: 33%;
+  background-color: #14213D;
+  font-weight: lighter;
+  height: 6rem;
+  line-height: 6rem;
+  text-shadow: 2px 2px 4px rgba(6, 222, 255, 0.684);
+}
+#resetbtn{
+  font-size: 2rem;
+  font-family: myfont;
+  margin-right: 1rem;
+  background-color: #992a9d;
+  color:rgb(4, 219, 65);
+  padding: 10px;
+  border-radius: 20px;
+  text-shadow: 2px 2px 3px black;
+}
+.choices{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  gap:3rem;
+}
+.choice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.choice:hover{
+  background-color: rgb(251, 100, 0);
+  border: none;
+  box-shadow:  4px 4px 4px #c804d2;
+}
+.choice img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.score-section{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  color: #CDB4DB;
+}
+#user-score, #comp-score{
+  font-size: 6rem;
+  color: #E63946;
+  text-shadow: 1px 1px 3px black;
+}
+.msgcontainer{
+  margin-top: 3rem;
+}
+.msg{
+  font-size: 2rem;
+  background-color: #2A9D8F;
+  display: inline;
+  padding: 1rem;
+  border-radius: 15px;
+  color:#F77F00;
+  text-shadow: 2px 2px 4px black;
+}
